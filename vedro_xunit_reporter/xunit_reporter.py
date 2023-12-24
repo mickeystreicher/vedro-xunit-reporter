@@ -10,8 +10,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 from vedro.core import Dispatcher, ExcInfo, PluginConfig, ScenarioResult
 from vedro.events import (ArgParsedEvent, ArgParseEvent, CleanupEvent,
                           ScenarioReportedEvent, StartupEvent)
-from vedro.plugins.director import DirectorInitEvent
-from vedro.plugins.director._reporter import Reporter
+from vedro.plugins.director import DirectorInitEvent, Reporter
 
 __all__ = ("XUnitReporterPlugin", "XUnitReporter",)
 
