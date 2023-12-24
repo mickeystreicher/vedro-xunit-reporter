@@ -2,12 +2,12 @@ import unittest
 
 from vedro.plugins.director import Reporter
 
-from vedro_xunit_reporter import XUnitReporterPlugin
+from vedro_xunit_reporter import XUnitReporter, XUnitReporterPlugin
 
 
 class TestXUnitReporter(unittest.TestCase):
     def test_plugin(self):
-        assert self.assertIsInstance(XUnitReporterPlugin, Reporter)
+        self.assertIsInstance(XUnitReporterPlugin(XUnitReporter), Reporter)
 
 
 if __name__ == "__main__":
