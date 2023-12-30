@@ -23,6 +23,7 @@ python = ">=3.8"
 vedro = ">=1.9"
 
 [tool.poetry.dev-dependencies]
+xmltodict = ">=0.13"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

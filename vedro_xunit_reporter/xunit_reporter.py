@@ -105,7 +105,7 @@ class XUnitReporterPlugin(Reporter):
         started_at = self._timestamp_to_iso8601(report.started_at if report.started_at else 0.0)
 
         self._test_suite.set("timestamp", started_at)
-        self._test_suite.set("time", f"{report.elapsed:.2f}")
+        self._test_suite.set("time", f"{report.elapsed:.3f}")
         self._test_suite.set("tests", f"{report.total}")
         self._test_suite.set("failures", f"{report.failed}")
         self._test_suite.set("skipped", f"{report.skipped}")
