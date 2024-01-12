@@ -2,7 +2,7 @@ import os
 import socket
 from datetime import datetime, timezone
 from pathlib import Path
-from traceback import format_tb
+from traceback import format_exception
 from typing import Type, Union
 from xml.dom import minidom
 from xml.etree.ElementTree import Element, SubElement, tostring
@@ -76,7 +76,8 @@ class XUnitReporterPlugin(Reporter):
             "message": str(exc_info.value),
         })
         if exc_info.traceback:
-            failure.text = "".join(format_tb(exc_info.traceback))
+            traceback = exc_info.traceback
+            failure.text = "".join(format_exception(exc_info.type, exc_info.value, traceback))
         return failure
 
     def _add_skipped(self, test_case: Element) -> Element:
