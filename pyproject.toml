@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vedro-xunit-reporter"
-version = "0.1.1"
+version = "0.1.2"
 description = "xUnit format reporter for Vedro testing framework"
 authors = [
     "Mickey Streicher <mickeystreicher@fastmail.us>"
