@@ -1,10 +1,13 @@
 # Vedro xUnit Reporter
 
-`vedro-xunit-reporter` is a plugin for the Vedro testing framework that generates test reports in the xUnit XML format. This plugin allows you to easily integrate your Vedro tests with various Continuous Integration (CI) systems and tools that support xUnit report format.
+[![PyPI Version](https://img.shields.io/pypi/v/vedro-xunit-reporter)](https://pypi.org/project/vedro-xunit-reporter/)
+[![License](https://img.shields.io/github/license/mickeystreicher/vedro-xunit-reporter)](https://github.com/mickeystreicher/vedro-xunit-reporter/blob/main/LICENSE)
+
+`vedro-xunit-reporter` is a plugin for the [Vedro](https://vedro.io/) testing framework that generates test reports in the xUnit XML format. This plugin allows you to easily integrate your Vedro tests with various Continuous Integration (CI) systems and tools that support xUnit report format.
 
 ## Installation
 
-To install `vedro-xunit-reporter`, you can use the `vedro plugin install` command:
+To install [vedro-xunit-reporter](https://pypi.org/project/vedro-xunit-reporter/), you can use the `vedro plugin install` command:
 
 ```sh
 $ vedro plugin install vedro-xunit-reporter
