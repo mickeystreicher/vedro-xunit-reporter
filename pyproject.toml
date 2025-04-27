@@ -10,20 +10,22 @@ readme = "README.md"
 repository = "https://github.com/mickeystreicher/vedro-xunit-reporter"
 classifiers = [
     "License :: OSI Approved :: Apache Software License",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Typing :: Typed",
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.9"
 vedro = ">=1.9,<2.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.test.dependencies]
+vedro-fn = "^0.1.0"
 xmltodict = ">=0.13"
+coverage = "^7.8.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

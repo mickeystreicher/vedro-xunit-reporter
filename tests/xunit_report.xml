@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<testsuites>
+	<testsuite name="Scenarios" hostname="Nikitas-MacBook-Pro-2.local" timestamp="1970-01-01T00:00:00" time="0.000" tests="1" failures="0" skipped="1" errors="0">
+		<testcase name="subject" classname="scenarios.scenario.Scenario" time="0.000">
+			<skipped/>
+		</testcase>
+	</testsuite>
+</testsuites>
